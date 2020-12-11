@@ -27,10 +27,28 @@ namespace Bakery.Models
   
   public class Pastry
   {
-    public int PastryPrice {get;}
-    public Pastry(int pastryPrice)
-    {
-      PastryPrice = pastryPrice;
+    public int PastryQuantity {get; set;}
+    public Pastry(int quantity)
+    {   
+      PastryQuantity = quantity;
     }
-  }  
+
+    public int OrderAmount()
+    {
+      if (order % 3 == 0)
+      {
+        int cost = (quantity/3) * 5;
+        return cost;
+      }
+      else if (quantity % 3 > 0 && quantity > 3)
+      {
+        int cost = ((quantity/3) * 5) + ((quantity % 3) * 2);
+        return cost;
+      }
+      else
+      {
+        return quantity * 2;
+      }
+    }
+  }
 }
