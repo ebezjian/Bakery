@@ -17,10 +17,17 @@ namespace Bakery.Tests
       [TestMethod]
       public void GetBreadPrice_ReturnsBreadPrice_Int()
       {
-        int testBreadPrice = 3;
-        Bread newBread = new Bread(4);
+        int testBreadPrice = 5;
+        Bread newBread = new Bread(5);
         int results = newBread.BreadPrice;
         Assert.AreEqual(testBreadPrice, results);
+      }
+
+      [TestMethod]
+      public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
+      {
+        Pastry newPastry = new Pastry(2);
+        Assert.AreEqual(typeof(Pastry), newPastry.GetType());
       }
 
     }

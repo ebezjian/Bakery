@@ -11,8 +11,13 @@ namespace Bakery.Models
       BreadPrice = breadPrice;
     }
   }
-//   public class Pastry
-//   {
-//     }
-//   }
+  public class Pastry
+  {
+    public int PastryPrice {get;}
+    public Pastry(int pastryPrice)
+    {
+      PastryPrice = pastryPrice;
+    }
+  }
+  
 }
