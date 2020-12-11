@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-// using System.Collections.Generic;
+using System.Collections.Generic;
 using Bakery.Models;
 
 namespace Bakery.Tests
@@ -11,20 +11,19 @@ namespace Bakery.Tests
     [TestMethod]
     public void BreadConstructor_CreatesAnInstanceOfBread_Constructor()
     {
-      int input = 5;      
-      Bread newBread = new Bread(input);
+            
+      Bread newBread = new Bread(5, 1);
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
+
     [TestMethod]
-    public void BreadConstructor_GetsPriceOfBread_Constructor()
-    {
-      int uBreadQuantity = 1;
-      int breadCostTest = 5;
-      Bread newBread = new Bread(breadCostTest, uBreadQuantity);
-
-      int breadCost = newBread.BreadCost();
-
-      Assert.AreEqual(breadCostTest, breadCost);
-    }
+    public void BreadPrice_GetsPriceOfBread_Int()
+    {      
+      int testBreadPrice = 5;
+      int testBreadQuantity = 1;
+      Bread newBread = new Bread(testBreadPrice, testBreadQuantity);
+      int confirmBreadPrice = newBread.testBreadPrice;
+      Assert.AreEqual(testBreadQuantity, confirmBreadPrice);
+  }
   }
 }
