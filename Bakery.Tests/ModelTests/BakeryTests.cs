@@ -34,7 +34,7 @@ namespace Bakery.Tests
       public void GetPastryPrice_ReturnsPatryPrice_Int()
       {
         int testPastryPrice = 2;
-        Pastry newPastry = new Pastry(2);
+        Pastry newPastry = new Pastry(3);
         int results = newPastry.PastryPrice;
         Assert.AreEqual(testPastryPrice, results);
       }
