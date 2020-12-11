@@ -19,7 +19,7 @@ namespace PierreBakery.Models
       Bread breadOrder = new Bread(bread);
       Pastry pastryOrder = new Pastry(pastry);
 
-      Console.WriteLine($"Merveilleux! your order was for {bread} loaves of bread and {pastry} delectable pastries. Your total will be ${breadOrder.OrderAmount() + pastryOrder.OrderCost()}.");
+      Console.WriteLine($"Merveilleux! your order was for {bread} loaves of bread and {pastry} delectable pastries. Your total will be ${breadOrder.OrderAmount() + pastryOrder.OrderAmount()}.");
       Console.WriteLine("But you know mon petite ami, I've decided that you are a treat in ofteself so here, take it for free. Viva La Treats!");
     }
   }
