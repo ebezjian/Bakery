@@ -13,11 +13,11 @@ namespace Bakery.Models
       BreadQuantity = breadQuantity;
       
     }
-    // public int BreadCost()
-    // {
-    // int breadCost = BreadPrice * BreadQuantity;
-    // return breadCost;
-    // }
+    public int BreadCost()
+    {
+    int breadCost = BreadPrice * BreadQuantity;
+    return breadCost;
+    }
 
   }
 
