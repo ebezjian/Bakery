@@ -1,5 +1,6 @@
-![Ellie Lambert](https://user-images.githubusercontent.com/49379604/99859318-b8f5c700-2b5d-11eb-9977-056ef61ecdb3.png)
-
+<div align="center">
+<img src="https://user-images.githubusercontent.com/49379604/99859318-b8f5c700-2b5d-11eb-9977-056ef61ecdb3.png">
+</div>
 #### Mars Age a Galactic calculator, updated 11/22/20
 
 ## This project was to showcase our TDD and Jest Testing skills that we have learned over the week
