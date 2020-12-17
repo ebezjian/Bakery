@@ -10,7 +10,7 @@ namespace Bakery.Tests
       [TestMethod]
       public void BreadConstructor_CreatesInstanceOfBread_Bread()
       {
-        Bread newBread = new Bread(5);
+        Bread newBread = new Bread(1, 3);
         Assert.AreEqual(typeof(Bread), newBread.GetType());
       }
 
@@ -18,28 +18,25 @@ namespace Bakery.Tests
       public void GetBreadPrice_ReturnsBreadPrice_Int()
       {
         int testBreadPrice = 5;
-        Bread newBread = new Bread(5);
+        Bread newBread = new Bread(testBreadPrice, 1);
         int results = newBread.BreadPrice;
         Assert.AreEqual(testBreadPrice, results);
       }
 
-      [TestMethod]
-      public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
-      {
-        Pastry newPastry = new Pastry(2);
-        Assert.AreEqual(typeof(Pastry), newPastry.GetType());
-      }
+      // [TestMethod]
+      // public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
+      // {
+      //   Pastry newPastry = new Pastry(2);
+      //   Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+      // }
 
-      [TestMethod]
-      public void GetPastryPrice_ReturnsPatryPrice_Int()
-      {
-        int testPastryPrice = 2;
-        Pastry newPastry = new Pastry(2);
-        int results = newPastry.PastryPrice;
-        Assert.AreEqual(testPastryPrice, results);
-      }
-
-
-
+      // [TestMethod]
+      // public void GetPastryPrice_ReturnsPatryPrice_Int()
+      // {
+      //   int testPastryPrice = 2;
+      //   Pastry newPastry = new Pastry(2);
+      //   int results = newPastry.PastryPrice;
+      //   Assert.AreEqual(testPastryPrice, results);
+      // }
     }
 }
