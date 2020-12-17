@@ -27,7 +27,7 @@ namespace Bakery.Tests
       public void GetBreadQuantity_ReturnsBreadQuantity_Int()
       {
         int testBreadPrice = 1;
-        int testBreadQuantity =5;
+        int testBreadQuantity =1;
         Bread newBread = new Bread(testBreadPrice, testBreadQuantity);
         int confirmBreadQuantity = newBread.BreadQuantity;
         Assert.AreEqual(testBreadQuantity, confirmBreadQuantity);
