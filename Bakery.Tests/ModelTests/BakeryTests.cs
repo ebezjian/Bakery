@@ -49,7 +49,7 @@ namespace Bakery.Tests
       {
         int testBreadPrice = 5;
         int testBreadQuantity = 15;
-        int testBreadTotal = 10;
+        int testBreadTotal = 50;
         Bread newBread = new Bread(testBreadPrice, testBreadQuantity);
         int confirmBreadTotal = newBread.OrderAmount();
         Assert.AreEqual(testBreadTotal, confirmBreadTotal);
