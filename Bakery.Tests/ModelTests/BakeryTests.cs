@@ -37,8 +37,8 @@ namespace Bakery.Tests
       public void GetBreadTotal_ReturnsBreadTotalIncludingDiscount_Int()
       {
         int testBreadPrice = 5;
-        int testBreadQuantity =1;
-        int testBreadTotal = 5;
+        int testBreadQuantity =3;
+        int testBreadTotal = 10;
         Bread newBread = new Bread(testBreadPrice, testBreadQuantity);
         int confirmBreadTotal = newBread.OrderAmount();
         Assert.AreEqual(testBreadTotal, confirmBreadTotal);
