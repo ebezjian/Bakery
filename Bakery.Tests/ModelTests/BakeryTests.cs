@@ -91,7 +91,18 @@ namespace Bakery.Tests
         int testPastryQuantity =1;
         Pastry newPastry = new Pastry(testPastryPrice, testPastryQuantity);
         int confirmPastryQuantity = newPastry.PastryQuantity;
-        Assert.Equals(testPastryQuantity, confirmPastryQuantity);
+        Assert.AreEqual(testPastryQuantity, confirmPastryQuantity);
+      }
+
+      [TestMethod]
+      public void GetPastryTotal_ReturnsPastryTotalAndDiscount_Int()
+      {
+        int testPastryPrice = 2;
+        int testPastryQuantity = 3;
+        int testPastryTotal = 5;
+        Pastry newPastry = new Pastry(testPastryPrice, testPastryQuantity);
+        int confirmPastryPrice = newPastry.GetPastryOrder();
+        Assert.AreEqual(testPastryTotal, confirmPastryPrice);
       }
     }
 

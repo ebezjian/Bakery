@@ -13,5 +13,27 @@ namespace Bakery.Models
       PastryPrice = pastryPrice;
       PastryQuantity = pastryQuantity;
     }
+
+    public int PastryOrder()
+    {
+      int pastryTotal = PastryPrice * PastryQuantity;
+      if (pastryTotal % 3 == 0)
+      {
+        int pastryDiscount = PastryQuantity / 3;
+        int discountPastryTotal = pastryTotal - pastryDiscount;
+        return discountPastryTotal;
+      }
+      else if (PastryQuantity > 3 && pastryTotal % 3 !=0)
+      {
+        int instacesOfSale = PastryQuantity / 3;
+        int bigDiscount = 1 *instacesOfSale;
+        int discountPastryTotal = pastryTotal - bigDiscount;
+        return discountPastryTotal;
+      }
+      else
+      {
+        return pastryTotal;
+      }
+    }
   }
 }
