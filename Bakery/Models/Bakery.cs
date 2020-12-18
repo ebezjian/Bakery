@@ -36,32 +36,4 @@ namespace Bakery.Models
       }
     }
   }
-
-  
-  public class Pastry
-  {
-    public int PastryQuantity {get; set;}
-    public Pastry(int quantity)
-    {   
-      PastryQuantity = quantity;
-    }
-
-    public int OrderAmount()
-    {
-      if (PastryQuantity % 3 == 0)
-      {
-        int cost = (PastryQuantity/3) * 5;
-        return cost;
-      }
-      else if (PastryQuantity% 3 > 0 && PastryQuantity > 3)
-      {
-        int cost = ((PastryQuantity/3) * 5) + ((PastryQuantity % 3) * 2);
-        return cost;
-      }
-      else
-      {
-        return PastryQuantity * 2;
-      }
-    }
-  }
 }
