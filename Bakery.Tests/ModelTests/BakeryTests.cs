@@ -59,8 +59,8 @@ namespace Bakery.Tests
       public void GetBreadtotal_ReturnsBreadTotalIfDiscountRequirementsNotMet_Int()
       {
         int testBreadPrice = 5;
-        int testBreadQuantity = 1;
-        int testBreadTotal = 5;
+        int testBreadQuantity = 5;
+        int testBreadTotal = 20;
         Bread newBread = new Bread(testBreadPrice, testBreadQuantity);
         int confirmBreadTotal = newBread.OrderAmount();
         Assert.AreEqual(testBreadTotal, confirmBreadTotal);
