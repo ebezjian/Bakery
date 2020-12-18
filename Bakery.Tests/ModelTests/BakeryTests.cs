@@ -33,6 +33,17 @@ namespace Bakery.Tests
         Assert.AreEqual(testBreadQuantity, confirmBreadQuantity);
       }
 
+      [TestMethod]
+      public void GetBreadTotal_ReturnsBreadTotalIncludingDiscount_Int()
+      {
+        int testBreadPrice = 5;
+        int testBreadQuantity =1;
+        int testBreadTotal = 5;
+        Bread newBread = new Bread(testBreadPrice, testBreadQuantity);
+        int confirmBreadTotal = newBread.OrderAmount();
+        Assert.AreEqual(testBreadTotal, confirmBreadTotal);
+      }
+
       // [TestMethod]
       // public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
       // {
