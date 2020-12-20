@@ -104,6 +104,17 @@ namespace Bakery.Tests
         int confirmPastryPrice = newPastry.PastryOrder();
         Assert.AreEqual(testPastryTotal, confirmPastryPrice);
       }
+
+      [TestMethod]
+      public void GetPastryTotalPrice_ReturnsPastryTotalWithMultipleInstancesOfDiscount_Int()
+      {
+        int testPastryPrice = 2;
+        int testPastryQuantity = 5;
+        int testPastryTotal = 2;
+        Pastry newPastry = new Pastry(testPastryPrice, testPastryQuantity);
+        int confirmPastryPrice = newPastry.PastryOrder();
+        Assert.AreEqual(testPastryTotal, confirmPastryPrice);
+      }
     }
 
     
