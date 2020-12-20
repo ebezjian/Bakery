@@ -7,11 +7,11 @@
 
 ## Setup
 
-- [Click to view Github repository](https://github.com/ebezjian/Bakery-Project.git) Or simply paste the following url into your prefered browser https://github.com/ebezjian/Bakery-Project.git
+- [Click to view Github repository](https://github.com/ebezjian/Bakery.Solution.git) Or simply paste the following url into your prefered browser https://github.com/ebezjian/Bakery.Solution.git
 - To Clone repository simply click the green Code button and copy the url
 - Using a prefered terminal type command 'git clone paste-url-here
 - Alternetivly click the Set up in Desktop button
-- [Click to open active site in Github](https://ebezjian.github.io/Bakery-Project/) Or simply paste the following url into your prefered browser https://ebezjian.github.io/Bakery-Project/
+- [Click to open active site in Github](https://ebezjian.github.io/Bakery.Solution/) Or simply paste the following url into your prefered browser https://ebezjian.github.io/Bakery.Solution/
 - _Once cloned, use the "$ cd " command to navigate to the directory created in the previous step._
 - _You must have .NET Core V2.2 installed in order to run the console app successfully. If you do not have .NET Core V2.2 installed, find more information and download it [here](https://dotnet.microsoft.com/download/dotnet-core/2.2)_
 - _Once in the newly cloned directory, go to your terminal while in Bakery file and type in dotnet build._
