@@ -121,7 +121,7 @@ namespace Bakery.Tests
       {
         int testPastryPrice = 2;
         int testPastryQuantity = 1;
-        int testPastryTotal = 4;
+        int testPastryTotal = 2;
         Pastry newPastry = new Pastry(testPastryPrice, testPastryQuantity);
         int confirmPastryTotal = newPastry.PastryOrder();
         Assert.AreEqual(testPastryTotal, confirmPastryTotal);
