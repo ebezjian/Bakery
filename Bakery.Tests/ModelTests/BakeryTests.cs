@@ -106,7 +106,7 @@ namespace Bakery.Tests
       }
 
       [TestMethod]
-      public void GetPastryTotalPrice_ReturnsPastryTotalWithMultipleInstancesOfDiscount_Int()
+      public void GetPastryTotal_ReturnsPastryTotalWithMultipleInstancesOfDiscount_Int()
       {
         int testPastryPrice = 2;
         int testPastryQuantity = 5;
@@ -114,6 +114,17 @@ namespace Bakery.Tests
         Pastry newPastry = new Pastry(testPastryPrice, testPastryQuantity);
         int confirmPastryPrice = newPastry.PastryOrder();
         Assert.AreEqual(testPastryTotal, confirmPastryPrice);
+      }
+
+      [TestMethod]
+      public void GetPastryTotal_ReturnsPastryTotalIfDiscountCriteriaAreNotMet_Int()
+      {
+        int testPastryPrice = 2;
+        int testPastryQuantity = 1;
+        int testPastryTotal = 4;
+        Pastry newPastry = new Pastry(testPastryPrice, testPastryQuantity);
+        int confirmPastryTotal = newPastry.PastryOrder();
+        Assert.AreEqual(testPastryTotal, confirmPastryTotal);
       }
     }
 
