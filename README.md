@@ -14,7 +14,8 @@
 - [Click to open active site in Github](https://ebezjian.github.io/Bakery-Project/) Or simply paste the following url into your prefered browser https://ebezjian.github.io/Bakery-Project/
 - _Once cloned, use the "$ cd " command to navigate to the directory created in the previous step._
 - _You must have .NET Core V2.2 installed in order to run the console app successfully. If you do not have .NET Core V2.2 installed, find more information and download it [here](https://dotnet.microsoft.com/download/dotnet-core/2.2)_
-- _Once in the newly cloned directory, enable the project to test successfully by running "dotnet restore" within Bakery and Bakery.Tests, both directories found at the root level of the project directory._
+- _Once in the newly cloned directory, go to your terminal while in Bakery file and type in dotnet build._
+- _Enable the project to test successfully by running "dotnet restore" within Bakery and Bakery.Tests, both directories found at the root level of the project directory._
 - _To test specs outlined in the project's testing suite, navigate to the Bakery.Tests directory in your command line and run "dotnet test"_
 - _To run the console application, enter "dotnet run" in your command line while in the Bakery directory._
 
