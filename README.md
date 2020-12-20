@@ -44,6 +44,10 @@
 - C# v 7.3
 - .NET Core v 2.2
 - dotnet script, REPL
+- Visual Studio Code
+- GitHub
+- Github Pages
+- MSTest
 - google translate because I never paid attention in french class.
 
 ### License
